@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[JournalEntries] (
+    [ID]                       NVARCHAR (255)  NULL,
+    [ReferenceNumber]          NVARCHAR (42)   NULL,
+    [TxnNumber]                INT             NULL,
+    [Date]                     DATE            NULL,
+    [CreditLineCount]          INT             NULL,
+    [DebitLineCount]           INT             NULL,
+    [FirstCreditAccount]       NVARCHAR (510)  NULL,
+    [FirstCreditAmount]        DECIMAL (31, 6) NULL,
+    [FirstCreditMemo]          NVARCHAR (MAX)  NULL,
+    [FirstCreditEntityName]    NVARCHAR (MAX)  NULL,
+    [FirstCreditEntityId]      NVARCHAR (MAX)  NULL,
+    [FirstDebitAccount]        NVARCHAR (510)  NULL,
+    [FirstDebitAmount]         DECIMAL (31, 6) NULL,
+    [FirstDebitMemo]           NVARCHAR (MAX)  NULL,
+    [FirstDebitEntityName]     NVARCHAR (MAX)  NULL,
+    [FirstDebitEntityId]       NVARCHAR (MAX)  NULL,
+    [LineAggregate]            NVARCHAR (MAX)  NULL,
+    [CurrencyName]             NVARCHAR (128)  NULL,
+    [CurrencyId]               NVARCHAR (510)  NULL,
+    [ExchangeRate]             FLOAT (53)      NULL,
+    [IsHomeCurrencyAdjustment] BIT             NULL,
+    [EditSequence]             NVARCHAR (32)   NULL,
+    [TimeModified]             DATETIME        NULL,
+    [TimeCreated]              DATETIME        NULL
+);
+

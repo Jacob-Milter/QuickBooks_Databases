@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[Deposits] (
+    [ID]                 NVARCHAR (255)  NULL,
+    [TxnNumber]          INT             NULL,
+    [Date]               DATE            NULL,
+    [CashBackAccount]    NVARCHAR (510)  NULL,
+    [CashBackAccountId]  NVARCHAR (510)  NULL,
+    [CashBackAmount]     DECIMAL (31, 6) NULL,
+    [CashBackId]         NVARCHAR (510)  NULL,
+    [CashBackMemo]       NVARCHAR (MAX)  NULL,
+    [DepositToAccount]   NVARCHAR (510)  NULL,
+    [DepositToAccountId] NVARCHAR (510)  NULL,
+    [Memo]               NVARCHAR (MAX)  NULL,
+    [TotalDeposit]       FLOAT (53)      NULL,
+    [ItemCount]          INT             NULL,
+    [ItemAggregate]      NVARCHAR (MAX)  NULL,
+    [CurrencyName]       NVARCHAR (128)  NULL,
+    [CurrencyId]         NVARCHAR (510)  NULL,
+    [ExchangeRate]       FLOAT (53)      NULL,
+    [CustomFields]       NVARCHAR (MAX)  NULL,
+    [TimeModified]       DATETIME        NULL,
+    [TimeCreated]        DATETIME        NULL,
+    [Payee]              NVARCHAR (510)  NULL,
+    [PayeeId]            NVARCHAR (510)  NULL
+);
+
